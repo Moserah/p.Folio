@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width:1024px){
+    nav ul li a{
+        font-size: 14px;
+        padding: 10px;
+    }
+    nav ul li a:hover,nav ul li a:focus{
+        background: #000;
+        color: #fff;
+    }
+    #about-me{
+        padding: 50px 80px 70px 80px;
+    }
+    .description-image img{
+        height: 100%;
+    }
+    .description-text{
+        height: 100%;
+        padding: 40px;
+    }
+    #services{
+        padding: 30px 0;
+    }
+    .contain{
+        padding: 20px;
+    }
+    .box{
+        height: 230px;
+        width: 280px;
+        margin: 30px 15px;
+    }
+    .content{
+        width: calc(100% - 75px);
+        height: 100%;
+        padding: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonial-block{
+        padding: 40px;
+        margin: 0 10px;
+    }
+    footer .contact{
+        min-width: 100%;
+        padding: 0 30px;
+    }
+    .contactForm{
+        padding-left: 200px;
+        width: calc(100% - 250px);
+    }
+    .contactInfo{
+        width: 300px;
+        height: calc(100% - 80px);
+    }
+    .sci{
+        bottom: 40px;
+        left: 20px;
+    }
+}
+@media screen and (max-width:992px){
+    .contain{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 400px;
+    }
+    nav ul li{
+        line-height: 4vh;
+        display: block;
+        margin: 40px 0;
+    }
+    nav ul li a{
+        font-size: clamp(1em, 2vw, 1.7em);
+        color: #000;
+    }
+    nav ul, nav.active ul{
+        top: 100px;
+        left: -40%;
+        padding: 50px;
+        position: absolute;
+        z-index: 100000;
+        width: 40%;
+        text-align: center;
+        height: auto;
+        background: #fff;
+        transition: 1s;
+        opacity: 0;
+    }
+    nav ul.activated, nav.active ul.activated{
+        left: 0;
+        opacity: 1;
+    }
+    label{
+        display: unset;       
+        margin-top: 40px;
+    }
+    nav.active label,
+    nav.active label::before,
+    nav.active label::after{
+        background: #000; 
+    }
+}
+@media screen and (max-width: 768px){
+    .landing-page{
+        left: 40%;
+    }
+    .box{
+        width: 280px;
+        margin: 30px 0;
+    }
+    .content{
+        width: calc(100% - 75px);
+        height: 100%;
+        padding: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #testimonial{
+        padding: 50px;
+        background: #fff;
+    }
+    .testimonial-block{
+        padding: 40px;
+    }
+    .contactForm{
+        padding-left: 160px;
+        width: calc(100% - 220px);
+        height: 500px;
+    }
+    .contactInfo{
+        width: 260px;
+        padding: 20px;
+        height: calc(500px - 80px);
+    }
+    .sci{
+        bottom: 80px;
+    }
+    .sci ul{
+        min-width: 200px;
+    }
+    .contactForm .formBox .inputBox textarea{
+        min-height: 90px;
+    }
+}
+@media screen and (max-width:425px){
+    nav ul, nav.active ul{        
+        left: -100%;
+        width: 100%;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+    }
+    .description-text{
+        width: 100%;
+        padding: 0px;
+    }
+    .description-image{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .box{
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+    .imgBx{
+        position: relative;
+    }
+    .imgBx, .box:hover .imgBx{
+        width: 100%;
+        height: 200px;
+        left: 0;
+        top: 0;
+    }
+    .imgBx img, .box:hover .imgBx img{
+        max-width: 100px;
+    }
+    .content{
+        position: relative;
+        width: 100%;
+    }
+    #testimonial{
+        padding: 30px;
+    }
+    .testimonial-block{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .testimonies{
+        flex-direction: column;
+    }
+    
+    footer .contact{
+        flex-direction: column;
+        padding: 10px 30px;
+    }
+    .contactInfo{
+        position: static;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+    .sci{
+        top: 250px;
+        left: 10px;
+    }
+    .sci ul{
+        left: 60px;
+        bottom: -90px;
+        min-width: 300px;
+        box-shadow: 0 10px 50px rgba(0,0,0,.3);
+    }
+    .contactForm{
+        padding: 20px;
+        background: #fff;
+        margin-left: 0px;
+        height: 250px;
+        width: 364px;
+        top: 270px;
+        z-index: 1;
+    }
+    .contactForm .formBox{
+        padding-top: 10px;
+    }
+    .contactForm .formBox .inputBox{
+        position: relative;
+        margin: 0 0 20px 0;
+    }
+    .contactForm .formBox .inputBox textarea{
+        min-height: 65px;
+    }
+    .contactForm .formBox .inputBox span{
+        padding: 5px 0;
+        font-size: clamp(14px, 2vw, 18px);
+    }
+}
+@media screen and (max-width:320px){
+    .box{
+        max-width: 270px;
+    }
+}
